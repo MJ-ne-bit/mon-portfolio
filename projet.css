@@ -269,3 +269,36 @@ transition: 0.5s;
       height: 300px;
       width: 350px;
    }
+   .mj{
+      width: 100%;
+      height: 250px;
+   }
+   .circle:hover{
+      background-color:purple;
+      transition:0.4s ;
+      color: white;
+   }
+   .contact .btn3{
+      background-color: black;
+      color: white;
+      outline: none;
+      border: none;
+      height: 40px;
+      width: 140px;
+      border-radius: 4px;
+   }
+   .btn3:hover{
+      background-color: transparent;
+      color: purple;
+      border: solid;
+   }
+   .monbouton{
+      background-color: purple;
+      color: white;
+      height: 40px;
+      width: 100px;
+      border: solid;
+   }
+   bordure{
+      border-radius: 6px;
+   }
