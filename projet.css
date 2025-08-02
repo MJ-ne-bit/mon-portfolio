@@ -27,9 +27,9 @@
  /*main section 
                      */
  .main{
-    background:url(./photo_2025-07-31_20-41-16.jpg)no-repeat;
+    background:url(./photo_2025-08-02_12-31-58.jpg)no-repeat;
     background-size: contain;
-    background-position: 80% top;
+    background-position: 90% top ;
     width: 100%;
     height: 90vh;
 
@@ -91,20 +91,20 @@
  }
  .progress{
     background-color: rgb(223,219,219);
-    justify-content: flex-start;
-    border-radius: 50px;
+    justify-content: flex-start;/*aligner les elements à gauche*/
+    border-radius: 50px;/*arrondi les bords*/
     align-items: center;
     position: relative;
-    display: flex;
+    display: flex;/*aligner les elements à l'interieur de la barre*/
     height: 25px;
     width: 100%;
  }
  .pro-value1{
-    animation: load1 3s normal forwards;
+    animation: load1 3s normal forwards;/*declenche l'animation load1 qui dure 3s*/
     border-radius: 50px;
     background-color: black;
     height: 25px;
-    width: 0;
+    width: 0;/*valeur de depart avant animation*/
  }
  .progress p{
     color: white;
@@ -134,7 +134,7 @@
  @keyframes load1{
     0%{
         width: 0;
-    }
+    }                   /*agrandir la largeur de la barre de 0 à 95% pendant les 2s*/
     100%{
        width: 95%; 
     }
