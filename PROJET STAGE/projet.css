@@ -1,0 +1,601 @@
+ 
+@import url('https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&display=swap');
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+          
+            line-height: 1.6;
+            font-family: "Mozilla Headline", sans-serif !important;
+        }
+
+        /*  BARRE DE RÉSEAUX SOCIAUX FIXE */
+        
+        .social-fixed {
+            position: fixed;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            background: #f0f0f0;
+            border-radius: 8px 0 0 8px;
+            box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 5px;
+            z-index: 9999;
+        }
+
+        .social-fixed a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 8px;
+            color: #333;
+            font-size: 18px;
+            text-decoration: none;
+            border-bottom: 1px solid #ddd;
+            transition: all 0.3s ease;
+            border-radius: 50%;
+            margin: 2px 0;
+        }
+
+        /* Styles spécifiques pour chaque réseau social */
+        .social-fixed .fcbk {
+            background-color: #3b5998;
+            color: white;
+        }
+
+        .social-fixed .twit {
+            background-color: #1da1f2;
+            color: white;
+        }
+
+        .social-fixed .ig {
+            background-color: #e1306c;
+            color: white;
+        }
+
+        .social-fixed .ytb {
+            background-color: #ff0000;
+            color: white;
+        }
+
+        .social-fixed a:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* NAVIGATION */
+        
+        .navbar {
+            background-color: white !important;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand {
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 1.5rem;
+            color: black !important;
+            font-weight: 800;    
+    cursor: pointer;
+    text-decoration: none;
+ }
+        
+
+        .nav-link {
+            color: black !important;
+            font-size: 1rem;
+            font-weight: 700;
+            padding: 8px 16px !important;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+             color: black;
+    cursor: pointer;
+    text-decoration: none;
+        }
+
+        .nav-link:hover {
+            color: white !important;
+            background-color: black;
+        }
+        .main {
+            display: flex;
+            align-items: center;
+             background:url(./TOP.png)no-repeat;
+    background-size: contain;
+  background-position: 80% top ;
+    width: 100%;
+    height: 80vh;
+        }
+
+        .main h3 {
+            font-size: 3.5rem;
+            font-weight: 700;
+        }
+
+        .main h6 {
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            line-height: 1.2;
+            border-bottom: 3px solid rgb(233, 20, 109);
+            width: fit-content;
+            padding-bottom: 5px;
+        }
+
+        .bga {
+            font-family: "Bebas Neue", sans-serif;
+        }
+/* Boutons principaux */
+        .bt1, .bt2 {
+            height: 55px;
+            width: 150px;
+            font-weight: bold;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            transition: all 0.3s ease;
+            margin: 5px;
+        }
+
+        .bt1 {
+            background-color: rgb(233, 20, 109);
+            color: white;
+        }
+
+        .bt1:hover {
+            background-color: rgb(202, 18, 95);
+            transform: translateY(-2px);
+        }
+
+        .bt2 {
+            background-color: transparent;
+            color: rgb(233, 20, 109);
+            border: 2px solid rgb(233, 20, 109);
+        }
+
+        .bt2:hover {
+            background-color: rgb(233, 20, 109);
+            color: white;
+        }
+         /* SECTION À PROPOS*/
+        
+        .perso {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+             width: 80%;
+   
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+        }
+
+        /* Barres de progression */
+        .progress {
+            background-color: rgb(7, 7, 7);
+            border-radius: 50px;
+            height: 25px;
+            width: 100%;
+            position: relative;
+            
+    justify-content: flex-start;/*aligner les elements à gauche*/
+    align-items: center;
+    display: flex;/*aligner les elements à l'interieur de la barre*/
+    
+        }
+       
+
+        .progress-bar {
+            border-radius: 50px;
+            background-color: black;
+           /* height: 100%;*/
+            transition: width 2s ease-in-out;
+           
+        }
+
+        .progress p {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            line-height: 25px;
+            margin: 0;
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+            
+             
+        }
+ 
+
+ .pro-value1{
+    animation: load1 3s normal forwards;/*declenche l'animation load1 qui dure 3s*/
+    border-radius: 50px;
+    background-color: black;
+    height: 25px;
+    width: 0;/*valeur de depart avant animation*/
+ }
+ 
+ .pro-value2{
+    animation: load2 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 25px;
+    width: 0;
+ }
+ .pro-value3{
+    animation: load3 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 25px;
+    width: 0;
+ }
+ .pro-value4{
+    animation: load4 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 25px;
+    width: 0;
+ }
+ @keyframes load1{
+    0%{
+        width: 0;
+    }                   /*agrandir la largeur de la barre de 0 à 95% pendant les 2s*/
+    100%{
+       width: 95%; 
+    }
+ }
+ @keyframes load2{
+    0%{
+        width: 0;
+    }
+    100%{
+       width: 90%; 
+    }
+ }
+ @keyframes load3{
+    0%{
+        width: 0;
+    }
+    100%{
+       width: 70%; 
+    }
+ }
+ @keyframes load4{
+    0%{
+        width: 0;
+    }
+    100%{
+       width: 60%; 
+    }
+ }
+ .btn1{
+      height: 40px;
+      width: 145px;
+      outline: none;
+      border: none; background-color: black;
+      color: white;
+      border-radius: 4px;
+      margin-right: 15px;
+ } 
+.btn1:hover{
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    transition: 0.5s; 
+}
+.btn2{
+    height: 40px;
+      width: 145px;
+      outline: none;
+      border: 1px solid black; background-color: transparent;
+      color: black;
+      border-radius: 4px;
+      margin-left: 10px;
+}
+.btn2:hover{
+    background-color: black;
+    color: white;
+    border: none;
+    transition: 0.5s;
+    }
+
+
+        .card {
+            border: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        .card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .circle {
+            height: 70px;
+            width: 70px;
+            background-color: #f8f9fa;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover .circle {
+            background-color: black;
+            color: white;
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+    /* SECTION PORTFOLIO */
+        
+        .control ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .control ul li {
+            margin: 5px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+             list-style: none;
+        background-color: black;
+        color: white;
+        display: inline-block;
+        cursor: pointer;
+        letter-spacing: 2px;
+        }
+
+        .control ul li:hover,
+        .control ul li.active {
+            background-color: rgb(233, 20, 109);
+        }
+
+        .item {
+            position: relative;
+            margin-bottom: 20px;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .item::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: all 0.3s ease;
+      background-color: rgba(238, 235, 230, 0.568);
+     
+        }
+    
+    .item:hover{
+      box-shadow: -2px -10px 196px -15px rgba(0,0,0,0.89);
+-webkit-box-shadow: -2px -10px 196px -15px rgba(0,0,0,0.89);
+-moz-box-shadow: -2px -10px 196px -15px rgba(0,0,0,0.89);
+     }
+
+
+        .item span {
+            position: absolute;
+            top: 40%;
+            left: 45%;
+            transform: translate(-50%, -50%);
+            font-size: 30px;
+            color: black;
+            cursor: pointer;
+            opacity: 0;
+            transition: all 0.3s ease;
+            z-index: 10;
+        }
+
+        .persoimg {
+            width: 350px !important;
+            height: 300px !important;
+            object-fit: cover;
+        }
+   
+     .item:hover span{
+        opacity: 1;
+        transition: 0.5s;
+     }
+     
+     .item:hover::before{
+       opacity: 1;
+       transition: 0.3s;
+
+     } 
+
+    .mj {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        /*SECTION CONTACT*/
+        
+        .contact .circle:hover {
+            background-color: purple;
+            color: white;
+            transition:0.4s ;
+        }
+
+        .monbouton {
+            background-color: purple;
+            color: white;
+            height: 45px;
+            width: 120px;
+            border: solid;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .monbouton:hover {
+            background-color: purple
+        }
+ .contact .btn3{
+      background-color: black;
+      color: white;
+      outline: none;
+      border: none;
+      height: 40px;
+      width: 140px;
+      border-radius: 4px;
+   }
+   .btn3:hover{
+      background-color: transparent;
+      color: purple;
+      border: solid;
+   }
+   
+   .bordure{
+      border-radius: 6px;
+   }
+      
+   .form-control {
+            border-radius: 6px;
+            border: 2px solid #e9ecef;
+            padding: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .form-control:focus {
+            border-color: rgb(233, 20, 109);
+            box-shadow: 0 0 0 0.2rem rgba(233, 20, 109, 0.25);
+        }
+
+                           /* RESPONSIVE DESIGN*/
+        
+        /* Tablettes */
+        @media (max-width: 768px) {
+            .main h3 {
+                font-size: 2.5rem;
+                text-align: center;
+                color: #fff !important;
+            }
+            .main h6 {
+                font-size: 1rem;
+                text-align: center;
+                margin: 0 auto;
+                color: #fff !important;
+            }
+            .main {
+                background-position: center bottom;
+                background-size: cover;
+                text-align: center;
+            }
+            .perso {
+                max-width: 300px;
+                margin: 20px auto;
+            }
+            h1 {
+                font-size: 2rem;
+                text-align: center;
+            }
+   
+   .social-fixed {
+                display: none; /* Masquer sur mobile pour éviter les problèmes */
+            }
+            /* Correction navbar mobile : fond opaque pour lisibilité */
+            .navbar {
+                background-color: rgba(255,255,255,0.98) !important;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            }
+            .navbar-nav .nav-link {
+                color: #222 !important;
+            }
+            /* Ajout : espace supplémentaire sous le titre pour descendre les boutons sur tablette */
+            .main .mt-5, .main .bt1, .main .bt2 {
+                margin-top: 40px !important;
+            }
+  
+}
+  /* Mobiles */
+        @media (max-width: 576px) {
+            .main h3 {
+                text-align: center;
+                color: #fff !important;
+                font-size: 2rem;
+            }
+            .main h6 {
+                text-align: center;
+                color: #fff !important;
+            }
+            .main h3 {
+                font-size: 2rem;
+            }
+            /* Ajout : espace supplémentaire sous le titre pour descendre les boutons */
+            .main .mt-5, .main .bt1, .main .bt2 {
+                margin-top: 40px !important;
+            }
+            
+            .bt1, .bt2 {
+                width: 100%;
+                margin: 5px 0;
+            }
+            
+            .btn1, .btn2 {
+                width: 100%;
+                margin: 5px 0;
+            }
+            
+            .control ul li {
+                display: block;
+                margin: 5px 0;
+            }
+            
+            .progress p {
+                font-size: 12px;
+            }
+        }
+        /* UTILITAIRES*/
+        
+        .text-primary-custom {
+            color: rgb(233, 20, 109) !important;
+        }
+
+        .bg-primary-custom {
+            background-color: purple !important;
+        }
+
+        /* Masquer les éléments sur très petits écrans */
+        @media (max-width: 480px) {
+            .social-fixed {
+                display: none;
+            }
+        }
+         @media (max-width: 320px) {
+            .main h3 {
+                font-size: 1.8rem;
+            }
+            
+            .container {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+       .PI{
+color: rgb(48, 48, 211) !important;
+       }

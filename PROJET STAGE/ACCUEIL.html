@@ -1,0 +1,689 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <!-- Meta tags obligatoires pour Bootstrap 4 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="projet.css">
+    <!-- Bootstrap CSS version 4.5.3 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- AOS (Animate On Scroll) pour les animations -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  
+    
+    <title>Portfolio Marie-Joelle - Web Designer</title>
+     
+</head>
+
+<body>
+    <!-- NAVIGATION RESPONSIVE -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <!-- Logo/Marque -->
+            <a class="navbar-brand font-weight-bold" href="#home">MJ</a>
+            
+            <!-- Bouton hamburger pour mobile -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Menu de navigation -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto" data-aos="fade-left" data-aos-duration="1000">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">À Propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECTION PRINCIPALE (HERO) -->
+    <section id="home" class="main py-5">
+        <div class="container py-5">
+            <div class="row align-items-center py-5">
+                <div class="col-lg-6 col-md-8 py-5">
+                    <!-- Titre principal avec animation -->
+                    <h3 data-aos="fade-right" data-aos-duration="2000">
+                        <small class="d-block mb-2">Bonjour, je suis</small>
+                        <span class="bga text-primary-custom">Marie-Joelle</span>   
+                    </h3>
+                    
+                    <!-- Sous-titre -->
+                    <h6 data-aos="fade-left" data-aos-duration="2000" class="my-4">
+                        Pro Web-Designer
+                    </h6>
+                    
+                    <!-- Boutons d'action -->
+                    <div class="mt-5" data-aos="fade-up" data-aos-duration="2000">
+                        <button class="bt1" onclick="scrollToSection('portfolio')">Mon Travail</button>
+                        <button class="bt2" onclick="scrollToSection('contact')">Contacter-moi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION À PROPOS-->
+    <section id="about" class="about py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <!-- Photo personnelle -->
+                <div class="col-lg-5 col-md-6 mb-4">
+                    <img src="./noirblanc.jpg" data-aos="fade-right" data-aos-duration="2000" 
+                         class="perso img-fluid" alt="Photo de Marie-Joelle">
+                </div>
+                
+                <!-- Contenu textuel -->
+                <div class="col-lg-7 col-md-6" data-aos="fade-left" data-aos-duration="2000">
+                    <h1>À Propos de moi.</h1>
+                    <p class="text-uppercase font-weight-bold text-primary-custom">Web Designer & Graphic Designer</p>
+                    
+                    <p class="py-3">
+                        Je suis <span class="font-weight-bold">Marie Joelle</span>, étudiante à l'Institut Saint Jean 
+                        en Conception et Développement d'Applications pour l'Économie Numérique. Passionnée par le 
+                        design web et graphique, je créé des expériences visuelles uniques et fonctionnelles.
+                    </p>
+
+                    <!-- Barres de compétences -->
+                    <div class="skills-section">
+                         <div class="progress my-3 position-relative "style="height:25px;">
+                    <div class="pro-value1">
+                        <p>HTML / CSS <span class="text-white float-right  " >95%</span></p>
+                    </div>
+                 </div>
+
+                 <div class="progress my-3 ">
+                    <div class="pro-value2">
+                        <p>BOOTSTRAP <span class="text-white float-right" >90 %</span></p>
+                    </div>
+                 </div>
+
+                 <div class="progress my-3">
+                    <div class="pro-value3">
+                        <p>JavaScript <span class="text-white float-right" >70%</span></p>
+                    </div>
+                 </div>
+                 <div class="progress my-3">
+                    <div class="pro-value4">
+                        <p>PHP / MySQL <span class="text-white float-right" >60%</span></p>
+                    </div>
+                 </div>
+                        
+                    </div>
+
+                    <!-- Boutons d'action -->
+                    <div class="mt-4">
+                        <button class="btn1">Télécharger CV</button>
+                        <button class="btn2" onclick="scrollToSection('contact')">Nous Contacter</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION SERVICES-->
+    <section id="services" class="services py-5 bg-light">
+        <div class="container py-5">
+            <h1 class="text-center mb-5" data-aos="fade-down" data-aos-duration="2000">Services.</h1>
+            
+            <!-- Première rangée de services -->
+            <div class="row mb-4">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card text-center py-4 h-100" data-aos="fade-right" data-aos-duration="2000">
+                        <div class="card-body">
+                            <div class="circle">
+                                <i class="fas fa-desktop"></i>
+                            </div>
+                            <h4 class="font-weight-bold pb-2">Web Design</h4>
+                            <p>Conception de maquettes pour sites web, choix de l'identité visuelle, 
+                               création de sites responsives modernes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card text-center py-4 h-100" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="card-body">
+                            <div class="circle">
+                                <i class="fas fa-pen-nib"></i>
+                            </div>
+                            <h4 class="font-weight-bold pb-2">Logo & Branding</h4>
+                            <p>Création de logos uniques et professionnels, mise en place d'une 
+                               identité visuelle forte et cohérente.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card text-center py-4 h-100" data-aos="fade-left" data-aos-duration="2000">
+                        <div class="card-body">
+                            <div class="circle">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <h4 class="font-weight-bold pb-2">Création Visuels</h4>
+                            <p>Conception de visuels attractifs avec Canva, création de flyers, 
+                               affiches, invitations et miniatures.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deuxième rangée de services -->
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card text-center py-4 h-100" data-aos="fade-right" data-aos-duration="2000">
+                        <div class="card-body">
+                            <div class="circle">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h4 class="font-weight-bold pb-2">Formation WordPress</h4>
+                            <p>Apprentissage de la création de pages et articles, accompagnement 
+                               pour gérer votre propre site WordPress.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card text-center py-4 h-100" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="card-body">
+                            <div class="circle">
+                                <i class="fas fa-bullhorn"></i>
+                            </div>
+                            <h4 class="font-weight-bold pb-2">Gestion Réseaux Sociaux</h4>
+                            <p>Création de contenu visuel et textuel, stratégie de présence en ligne 
+                               pour booster votre visibilité.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card text-center py-4 h-100" data-aos="fade-left" data-aos-duration="2000">
+                        <div class="card-body">
+                            <div class="circle">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h4 class="font-weight-bold pb-2">Design Mobile</h4>
+                            <p>Conception d'interfaces mobiles intuitives et responsive, 
+                               optimisation pour tous les appareils.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SECTION PORTFOLIO-->
+    <section id="portfolio" class="portfolio py-5">
+        <div class="container text-center py-5">
+            <h1 class="text-center mb-5" data-aos="fade-down" data-aos-duration="1000">Portfolio.</h1>
+            
+            <!-- Filtres du portfolio -->
+            <div class="control mb-5">
+                <ul class="mb-0">
+                    <li class="button " data-filter="All" data-aos="fade-right" data-aos-duration="2000">All</li>
+                    <li class="button" data-filter="Brand" data-aos="fade-right" data-aos-duration="2000">Brand</li>
+                    <li class="button" data-filter="Design" data-aos="fade-right" data-aos-duration="2000">Design</li>
+                    <li class="button" data-filter="Graphic" data-aos="fade-right" data-aos-duration="2000">Graphic</li>
+                </ul>
+            </div>
+            
+            <!-- Galerie du portfolio -->
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-right" data-aos-duration="2000">
+                    <div class="item filter Brand Design Graphic">
+                        <img src="./cahier.jpg" class="persoimg img-fluid" alt="Projet Cahier">
+                        <span><i class="fas fa-plus" data-toggle="modal" data-target="#portfoliomodal1"></i></span>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="item filter Brand Design ">
+                        <img src="./fleur rose.jpg" class="persoimg img-fluid" alt="Projet Fleur Rose">
+                        <span><i class="fas fa-plus" data-toggle="modal" data-target="#portfoliomodal2"></i></span>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-left" data-aos-duration="2000">
+                    <div class="item filter Brand Design">
+                        <img src="./doublecahier.jpg" class="persoimg img-fluid" alt="Projet Double Cahier">
+                        <span><i class="fas fa-plus" data-toggle="modal" data-target="#portfoliomodal3"></i></span>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-right" data-aos-duration="2000">
+                    <div class="item filter Design">
+                        <img src="./ciel.jpg" class="persoimg img-fluid" alt="Projet Ciel">
+                        <span><i class="fas fa-plus" data-toggle="modal" data-target="#portfoliomodal4"></i></span>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="item filter Graphic">
+                        <img src="./serpent.jpg" class="persoimg img-fluid" alt="Projet Serpent">
+                        <span><i class="fas fa-plus" data-toggle="modal" data-target="#portfoliomodal5"></i></span>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-left" data-aos-duration="2000">
+                    <div class="item filter Brand">
+                        <img src="./sombre.jpg" class="persoimg img-fluid" alt="Projet Sombre">
+                        <span><i class="fas fa-plus" data-toggle="modal" data-target="#portfoliomodal6"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION BLOG-->
+    <section id="blog" class="blog bg-light py-5">
+        <div class="container">
+            <h1 data-aos="fade-down" data-aos-duration="1000" class="text-center mb-5">Notre Blog.</h1>
+            
+            <div class="row py-4">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100" data-aos="fade-right" data-aos-duration="1000">
+                        <img src="./photo_2025-08-01_13-13-05.jpg" alt="Article Blog" class="mj card-img-top">
+                        <div class="card-body">
+                            <small class="text-muted font-weight-bold">WebDesign</small>
+                            <h5 class="font-weight-bold my-3">Meilleurs designs web, modèles et thèmes pour voyage</h5>
+                            <a href="#" class="text-primary-custom font-weight-bold PI">Lire Plus</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100" data-aos="fade-up" data-aos-duration="2000">
+                        <img src="./photo_2025-08-01_13-13-00.jpg" alt="Article Blog" class="mj card-img-top">
+                        <div class="card-body">
+                            <small class="text-muted font-weight-bold">WebDesign</small>
+                            <h5 class="font-weight-bold my-3">Tendances design 2025 : ce qui va marquer l'année</h5>
+                            <a href="#" class=" PI text-primary-custom font-weight-bold PI">Lire Plus</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100" data-aos="fade-left" data-aos-duration="2000">
+                        <img src="./photo_2025-08-01_13-13-09.jpg" alt="Article Blog" class="mj card-img-top">
+                        <div class="card-body">
+                            <small class="text-muted font-weight-bold">WebDesign</small>
+                            <h5 class="font-weight-bold my-3">Guide complet pour créer un site web responsive</h5>
+                            <a href="#" class="text-primary-custom font-weight-bold PI">Lire Plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SECTION CONTACT-->
+    <section id="contact" class="contact py-5">
+        <div class="container py-5">
+            <h1 data-aos="fade-down" data-aos-duration="1000" class="text-center mb-5">Contactez-Nous.</h1>
+            
+            <!-- Informations de contact -->
+            <div class="row py-4">
+                <div class="col-lg-9 mx-auto">
+                    <div class="row text-center">
+                        <div class="col-lg-4 col-md-4 mb-4" data-aos="fade-right" data-aos-duration="2000">
+                            <div class="circle mx-auto">
+                                <i class="fas fa-location-dot"></i>
+                            </div>
+                            <h5 class="font-weight-bold">Adresse</h5>
+                            <p>Yaoundé, Cameroun</p>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 mb-4" data-aos="fade-up" data-aos-duration="2000">
+                            <div class="circle mx-auto">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h5 class="font-weight-bold">E-mail</h5>
+                            <p>marie.nkong@institutsaintjean.org</p>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 mb-4" data-aos="fade-left" data-aos-duration="2000">
+                            <div class="circle mx-auto">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <h5 class="font-weight-bold">Téléphone</h5>
+                            <p>+237 698 948 611</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formulaire de contact -->
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <form data-aos="fade-up" data-aos-duration="1000">
+                        <!-- Email et téléphone côte à côte -->
+                        <div class="row mb-3">
+                            <div class="col-md-6 mb-3" data-aos="fade-right" data-aos-duration="2000">
+                                <input type="email" class="form-control" id="email" 
+                                       placeholder="Votre email" required>
+                            </div>
+                            <div class="col-md-6 mb-3" data-aos="fade-left" data-aos-duration="2000">
+                                <input type="tel" class="form-control" id="phone" 
+                                       placeholder="Votre numéro de téléphone" required>
+                            </div>
+                        </div>
+
+                        <!-- Zone de message -->
+                        <div class="mb-4" data-aos="fade-up" data-aos-duration="2000">
+                            <textarea class="form-control" id="message" rows="6" 
+                                      placeholder="Tapez votre message ici..." required></textarea>
+                        </div>
+
+                        <!-- Bouton d'envoi -->
+                        <div class="text-center" data-aos="fade-up" data-aos-duration="2000">
+                            <button type="submit" class="monbouton">Envoyer </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RÉSEAUX SOCIAUX FIXES-->
+    <div class="social-fixed">
+        <a href="#" class="fcbk" title="Facebook" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="twit" title="Twitter" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="ig" title="Instagram" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="ytb" title="YouTube" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+        </a>
+    </div>
+
+    <!--  MODALES POUR LE PORTFOLIO -->
+    <!-- Modal 1 -->
+    <div class="modal fade" id="portfoliomodal1" tabindex="-1" role="dialog" aria-labelledby="portfoliomodal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="portfoliomodal1Label">Projet Cahier</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="./cahier.jpg" class="img-fluid rounded" alt="Projet Cahier">
+                    <p class="mt-3">Description du projet cahier - Design graphique créatif.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="portfoliomodal2" tabindex="-1" role="dialog" aria-labelledby="portfoliomodal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="portfoliomodal2Label">Projet Fleur Rose</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="./fleur rose.jpg" class="img-fluid rounded" alt="Projet Fleur Rose">
+                    <p class="mt-3">Création artistique florale - Design délicat et moderne.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="portfoliomodal3" tabindex="-1" role="dialog" aria-labelledby="portfoliomodal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="portfoliomodal3Label">Projet Double Cahier</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="./doublecahier.jpg" class="img-fluid rounded" alt="Projet Double Cahier">
+                    <p class="mt-3">Design éditorial - Mise en page créative et professionnelle.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="modal fade" id="portfoliomodal4" tabindex="-1" role="dialog" aria-labelledby="portfoliomodal4Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="portfoliomodal4Label">Projet Ciel</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="./ciel.jpg" class="img-fluid rounded" alt="Projet Ciel">
+                    <p class="mt-3">Photographie artistique - Capture des nuances célestes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5 -->
+    <div class="modal fade" id="portfoliomodal5" tabindex="-1" role="dialog" aria-labelledby="portfoliomodal5Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="portfoliomodal5Label">Projet Serpent</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="./serpent.jpg" class="img-fluid rounded" alt="Projet Serpent">
+                    <p class="mt-3">Art graphique - Exploration des formes organiques.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6 -->
+    <div class="modal fade" id="portfoliomodal6" tabindex="-1" role="dialog" aria-labelledby="portfoliomodal6Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="portfoliomodal6Label">Projet Sombre</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="./sombre.jpg" class="img-fluid rounded" alt="Projet Sombre">
+                    <p class="mt-3">Design minimaliste - Jeu d'ombres et de lumières.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS JAVASCRIPT-->
+    
+    <!-- jQuery (requis pour Bootstrap 4) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    
+    <!-- Popper.js (requis pour Bootstrap 4) -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+    
+    <!-- AOS (Animate On Scroll) -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        
+        // INITIALISATION DES ANIMATIONS AOS
+         
+        AOS.init({
+            duration: 2000, // Durée par défaut des animations
+            once: true,     // Animation ne se joue qu'une fois
+            offset: 100     // Décalage avant le déclenchement
+        });
+
+        //SYSTÈME DE FILTRAGE DU PORTFOLIO
+        
+        $(document).ready(function(){
+            // Gestion des clics sur les boutons de filtrage
+            $(".button").click(function(){
+                // Récupération de la valeur du filtre
+                var value = $(this).attr('data-filter');
+                
+                console.log("Valeur cliquée:",value);
+                console.log("élements trouvés:", $('.filter.' +value).length);
+                console.log("Tous les éléments .filter:", $('.filter').length);
+                // Application du filtre
+                if(value === "all"){
+                    // Afficher tous les éléments
+                    $('.filter').show('1000');
+                } else {
+                    // Masquer les éléments qui ne correspondent pas au filtre
+                    $(".filter").not('.'+value).hide('1000');
+                    // Afficher les éléments qui correspondent au filtre
+                    $('.filter').filter('.'+value).show('1000');
+                }
+                
+                // Gestion des classes actives sur les boutons
+                $(this).addClass('active').siblings().removeClass('active');
+            });
+        });
+
+        
+        // FONCTION DE DÉFILEMENT FLUIDE
+        
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+
+        
+        // GESTION DU MENU RESPONSIVE
+        
+        $(document).ready(function() {
+            // Fermer le menu mobile au clic sur un lien
+            $('.nav-link').on('click', function() {
+                if (window.innerWidth < 992) { // Seulement sur mobile/tablette
+                    $('.navbar-collapse').collapse('hide');
+                }
+            });
+            
+            // Ajouter un effet de défilement au menu fixe
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 100) {
+                    $('.navbar').addClass('navbar-scrolled');
+                } else {
+                    $('.navbar').removeClass('navbar-scrolled');
+                }
+            });
+        });
+
+       
+        // GESTION DU FORMULAIRE DE CONTACT
+        
+        $(document).ready(function() {
+            $('form').on('submit', function(e) {
+                e.preventDefault(); // Empêcher l'envoi par défaut
+                
+                // Validation simple des champs
+                const email = $('#email').val();
+                const phone = $('#phone').val();
+                const message = $('#message').val();
+                
+                if (email && phone && message) {
+                    // Simulation d'envoi réussi
+                    alert('Message envoyé avec succès ! Nous vous répondrons dans les plus brefs délais.');
+                    
+                    // Réinitialiser le formulaire
+                    this.reset();
+                } else {
+                    alert('Veuillez remplir tous les champs obligatoires.');
+                }
+            });
+        });
+
+       
+        // AMÉLIORATION DE L'ACCESSIBILITÉ
+        
+        $(document).ready(function() {
+            // Ajouter la gestion du clavier pour les boutons de filtre
+            $('.button').on('keypress', function(e) {
+                if (e.which === 13 || e.which === 32) { // Enter ou Espace
+                    $(this).click();
+                }
+            });
+            
+            // Améliorer l'accessibilité des modales
+            $('.modal').on('shown.bs.modal', function () {
+                $(this).find('.modal-content').focus();
+            });
+        });
+
+        
+        // GESTION DES PERFORMANCES
+       
+        // Optimisation du redimensionnement de fenêtre
+        let resizeTimer;
+        $(window).resize(function() {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(function() {
+                // Actions à effectuer après redimensionnement
+                console.log('Fenêtre redimensionnée');
+            }, 250);
+        });
+
+        // Lazy loading pour les images (amélioration future)
+        $(document).ready(function() {
+            // Observer pour le lazy loading (peut être implémenté plus tard)
+            if ('IntersectionObserver' in window) {
+                console.log('IntersectionObserver supporté - prêt pour le lazy loading');
+            }
+        });
+    </script>
+
+    
+</body>
+</html>
